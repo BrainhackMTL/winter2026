@@ -1,0 +1,6 @@
+.vscode/
+.venv/
+.DS_Store
+
+_site/css/stylish-portfolio.css
+_site/index.html

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{{title}}</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"> -->
+   <link href='https://fonts.googleapis.com/css?family=Comfortaa:700' rel='stylesheet' type='text/css'>
+   <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center text-center">
+            <h1>{{title}}</h1>
+			<div class="row">
+				<div class="col-xl-8 col-xl-offset-2 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+					<h2>{{location}}</h2>
+				</div>
+		    </div>
+			<div class="row">
+				<div class="col-xl-8 col-xl-offset-2 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+					<h2>{{dates}}</h2>
+				</div>
+		    </div>
+
+      <br>
+        <!-- <a href="{{registration_link}}" target="_blank" class="btn btn-dark btn-lg top5 left5">Register Now</a> -->
+        <a href="{{registration_link}}" class="btn btn-dark btn-lg top5 left5">Register opening soon</a>
+        <a href="{{discord_link}}" target="_blank" class="btn btn-dark btn-lg top5 left5">Join on Brainhack Montreal Discord</a>
+        <!-- <a href="{{project_submit_link}}" target="_blank" class="btn btn-dark btn-lg top5 left5">Submit a Project</a><br><br> -->
+    </header>
+    
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <!-- <hr class="small"> -->
+                <div class="row">
+                  {% for service in services %}
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item">
+                            <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa {{service.fa_icon}} fa-stack-1x text-primary"></i>
+                        </span>
+                            <h4>
+                                <strong>{{service.name}}</strong>
+                            </h4>
+                            <p>{{service.short}}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                </div>
+                <!-- /.row (nested)
+            </div>
+            <!-- /.col-lg-10 -->
+        </div>
+        <!-- /.row -->
+    </section>
+
+    <!-- Details -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="details" class="details">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-xl-offset-2 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                    <p><h3 class="text-center">Why {{title}}?</h3></p>
+                    <p>Join us at the Montreal edition of Brainhack Global, a three-day event set to take place on {{dates}} at {{location_name}}! The {{title}} is part of the Brainhack Global initiative involving decentralized events that bring together researchers from various subfields and career stages within the neuroscience community. Our primary objective is to promote open science practices and facilitate the exchange of knowledge in the realm of neuroscience.</p>
+                    <p>We have thoughtfully curated this event to cultivate a dynamic and collaborative atmosphere. There will be educational tutorials, hands-on hacking projects, and social gatherings, all meticulously tailored to meet the specific requirements and interests of the {{city}} neuroscience community. We eagerly anticipate your active participation!</p>
+                    <p>During the open hacking time, every participant has the opportunity to propose a project as part of the {{title}}. These projects can either be endeavors attendees have previously worked on and seek contributions, opinions, or assistance with, or entirely new projects they aspire to undertake within the hackathon group. This inclusive approach encourages innovation and collective problem-solving within the Brainhack community. 
+                    <!-- TODO uncomment when project submission is open -->
+                    <!-- Get involved and <a href="{{project_submit_link}}" target="_blank">submit your project</a> or check out <a href="{{project_link}}" target="_blank">all proposed projects</a>.</p> -->
+                    <br>
+                    <!-- TODO uncomment when registration is open -->
+                    <!-- <p><h3 class="text-center"><a href="{{registration_link}}" target="_blank">{{registration_text}}</a></h3></p> -->
+                    <p><h3 class="text-center">{{registration_text}}</h3></p>
+                    <p>{{title}} is a local hub of Brainhack Global {{year}}.
+                    The goal of the hackathon is to bring together researchers with disparate backgrounds to collaborate on open science projects in neuroscience.</p>
+					<h4>Dates: {{dates}}</h4>
+					<h4>Costs: {{details.costs}}</h4>
+					<h4>Location: <a href="{{location_url}}">{{location_name}}</a></h4>
+                    <!-- TODO uncomment when project submission is open -->
+                    <!-- <h4>Note: Make sure to read the <a href="{{code_of_conduct_link}}">code of conduct</a> of BrainHack Global and fill out the <a href="{{survey_link}}" target="_blank">demographic survey</a>.</h4> -->
+                    <br>
+					<p class="text-center">Please join the <a href="{{discord_link}}" target="_blank">Brainhack Montreal Discord</a> for updated information on the developing Hackathon content and to contribute your own ideas.</p>
+                </div>
+			</div>
+		</div>
+	</section>
+    <!-- Map -->
+    <section id="map" class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" scrollwheel="false" marginheight="0" marginwidth="0" src="{{google_maps_link}}" style="border:0" allowfullscreen></iframe>
+        <br />
+        <small>
+            <a href="{{google_maps_link}}"></a>
+        </small>
+    </section>
+
+    <!-- Brainhack -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="details" class="details">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-xl-offset-2 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                    <p><h3 class="text-center">Why Brainhack?</h3></p>
+                    {% for service in services %}
+                        <p>
+                            <span class="hl"><i class="fa-solid {{service.fa_icon}}"></i> {{service.title}} </span>
+                            {{service.desc}}
+                        </p>
+                    {% endfor%}
+                </div>
+			</div>
+		</div>
+	</section>
+
+    <!-- Schedule -->
+    <aside class="workspace" id="schedule">
+        <div class="container">
+			<div class="row text-center top30">
+				<div class="col-md-2 col-md-offset-5 col-xs-8 col-xs-offset-2 text-dark">
+				    <h3>
+                        <a href="{{schedule_link}}" target="_blank">Schedule</a>
+                    </h3>
+			    </div>
+			</div>
+			<div class="row top30">
+        {% for sched in schedule %}
+				<div class="col-md-6 col-lg-4 col-sm-10 col-xs-10 col-md-offset-0 col-lg-offset-0 col-sm-offset-1 col-xs-offset-1">
+					<div class="row top5 text-center">
+				        <div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2 text-dark">
+					        <h4>{{sched.date}}</h4>
+				        </div>
+				    </div>
+            {% for time in sched.times %}
+					<div class="row top5">
+			            <div class="col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1 col-sm-5 col-sm-offset-0 col-xs-5 text-dark">
+				            {{time.time}}
+			            </div>
+			            <div class="col-sm-7 col-sm-offset-0 col-md-6 col-md-offset-1 col-lg-6 col-lg-offset-1 col-xs-7 text-dark">
+				            {{time.event}}
+			            </div>
+				    </div>
+            {% endfor %}
+            <div class="row top5">&nbsp;
+  				    </div>
+  					<div class="row top5">&nbsp;
+  				    </div>
+  					<div class="row top5">&nbsp;
+  				    </div>
+  				</div>
+        {% endfor %}
+		    </div>
+		</div>
+    </aside>
+
+    {# TODO uncomment when project submission is open
+    <!-- Projects -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="projects" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-xl-8 col-xl-offset-2 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                    <h3>Project Ideas</h3>
+                    <p>Open hacking projects are a great forum for getting support on a technical issue from your own research program or starting a new collaborative project.</p>
+                    <p>Check out our full <a href="{{project_link}}" target="_blank">project listing</a> or <a href="{{project_submit_link}}" target="_blank">suggest your own</a>.</p>
+                </div>
+			</div>
+		</div>
+	</section>
+    #}
+
+    {# TODO uncomment when sponsors are available
+    <section id="sponsors" class="no-padding">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+				<div class="col-lg-12 text-center">
+				    <br><h3 class="text-color-blue"><strong>{{title}} is sponsored By:</strong></h3><br><br>
+			    </div>
+			</div>
+            <div class="row top30" style="margin-inline: 0px;">
+                {% for sponsor in sponsors %}
+                    <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                        <a href="{{sponsor.url}}" target="_blank">
+                            <img src="{{sponsor.logo}}" class="img-responsive" style="margin-inline: auto;" alt="{{sponsor.name}}" id="{{sponsor.name.replace(" ", "_")}}">
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+
+			<br><br>
+        </div>
+    </section>
+    #}
+
+    <!-- Footer -->
+    <footer id="contact" class="services bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h3><strong>For more information:</strong></h3>
+                    <i class="fa fa-brain fa-fw"></i>
+                    <a href="{{discord_link}}">Brainhack Montreal Discord</a>
+                    <br>
+                    <i class="fa fa-envelope fa-fw"></i>
+                    <a href="mailto:{{contact_email}}">{{contact_email}}</a>
+                    <br>
+                    <br>
+                    <h3><strong>Organizers:</strong>
+                    </h3>
+                    <ul class="list-unstyled">
+                      {% for org in organizers %}
+                        <li><h4>{{org}}</h4></li>
+                        {% endfor %}
+
+                    </ul><br>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

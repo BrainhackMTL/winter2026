@@ -1,0 +1,166 @@
+{
+  "title": "Brainhack Montreal 2025",
+  "location": "Montreal, QC, Canada",
+  "city": "Montreal",
+  "dates": "TBA, 2025",
+  "year": "2025",
+  "background_img": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Montreal_-_QC_-_Skyline.jpg",
+  "color_theme": {
+    "primary": "#912338",
+    "primary_hover": "#7a1d2e",
+    "font": "#fff"
+  },
+  "code_of_conduct_link": "https://brainhack.org/code-of-conduct.html",
+  "registration_link": "",
+  "registration_text": "Registration opening soon!",
+  "survey_link": "",
+  "discord_link": "https://discord.gg/wysCYqTWyM",
+  "project_link": "https://brainhack.org/global2025/projects/",
+  "project_submit_link": "https://github.com/brainhackorg/global2025/issues/new?assignees=&labels=project&template=project-submission-template.yml",
+  "project_submit_icon": "fa-child",
+  "title_photo_link": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Montreal_-_QC_-_Skyline.jpg",
+  "services": [
+    {
+      "name": "Get Involved",
+      "fa_icon": "fa-gears",
+      "short": "Find exciting projects that you would like to contribute to.",
+      "title": "Open hacking",
+      "desc": "sessions for attendees to work together on projects of their own design. Attendees are encouraged but not required to bring their own projects into the hackathon to work collaboratively with others. Project inspirations could stem from other projects proposed by attendees, ongoing work you're involved in, or new research areas that you've been waiting to have an opportunity to jump on!"
+    },
+    {
+      "name": "Share",
+      "fa_icon": "fa-share-alt",
+      "short": "Show your research to other neuroscience researchers.",
+      "title": "Unconference",
+      "desc": "is the perfect opportunity to showcase bits of your latest research, spark interest in a new initiative/project, or make an announcement of interest to the Brainhack community."
+    },
+    {
+      "name": "Gain Skills",
+      "fa_icon": "fa-graduation-cap",
+      "short": "Learn how to apply the latest computational tools to your data.",
+      "title": "TrainTrack",
+      "desc": "to help you get up to speed with various programming languages, current practices in open-source, and reproducible neuroscience analysis."
+    },
+    {
+      "name": "Network",
+      "fa_icon": "fa-brands fa-weixin",
+      "short": "Meet researchers from a variety of backgrounds.",
+      "title": "Network",
+      "desc": "with the community throughout the hackathon and an evening social event!"
+    }
+  ],
+  "details": {
+    "costs": "TBA - Breakfast and lunch will be provided."
+  },
+  "schedule_background_img": "https://upload.wikimedia.org/wikipedia/commons/0/04/Pont_Jacques_Cartier_Montreal.JPG",
+  "schedule_link": "",
+  "schedule": [
+    {
+      "date": "Day 1 (subject to change)",
+      "times": [
+        {
+          "time": "9:00-9:30",
+          "event": "Registration & Breakfast"
+        },
+        {
+          "time": "9:30-10:00",
+          "event": "Introduction to Brainhack"
+        },
+        {
+          "time": "10:00-11:00",
+          "event": "Project pitches"
+        },
+        {
+          "time": "11:00-12:00",
+          "event": "Open hacking"
+        },
+        {
+          "time": "12:00-13:00",
+          "event": "Lunch"
+        },
+        {
+          "time": "13:00-16:30",
+          "event": "Open hacking / TrainTrack"
+        },
+        {
+          "time": "16:30-18:00",
+          "event": "Unconference"
+        },
+        {
+          "time": "18:45-20:00",
+          "event": "Social Gathering"
+        }
+      ]
+    },
+    {
+      "date": "Day 2 (subject to change)",
+      "times": [
+        {
+          "time": "9:00-9:30",
+          "event": "Breakfast"
+        },
+        {
+          "time": "9:30-12:00",
+          "event": "Open hacking"
+        },
+        {
+          "time": "12:00-13:00",
+          "event": "Lunch"
+        },
+        {
+          "time": "13:00-16:30",
+          "event": "Open hacking"
+        },
+        {
+          "time": "16:30-18:00",
+          "event": "Unconference"
+        }
+      ]
+    },
+    {
+      "date": "Day 3 (subject to change)",
+      "times": [
+        {
+          "time": "9:00-9:30",
+          "event": "Breakfast"
+        },
+        {
+          "time": "9:30-11:00",
+          "event": "Unconference"
+        },
+        {
+          "time": "11:00-12:00",
+          "event": "Open hacking"
+        },
+        {
+          "time": "12:00-13:00",
+          "event": "Lunch"
+        },
+        {
+          "time": "13:00-15:00",
+          "event": "Open hacking"
+        },
+        {
+          "time": "15:00-17:00",
+          "event": "Project wrap-ups + conclusion"
+        }
+      ]
+    }
+  ],
+  "location_logo": "fa-solid fa-location-dot",
+  "location_name": "TBA",
+  "location_url": "",
+  "google_maps_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d178787.4312135177!2d-73.87667945522435!3d45.559304610957646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70d%3A0x654e3138211fefef!2sMontreal%2C%20QC!5e0!3m2!1sen!2sca!4v1753906100462!5m2!1sen!2sca",
+  "sponsors": [],
+  "organizers": [
+    "Mathieu Dugré",
+    "Michelle Wang",
+    "Hiba Akhaddar",
+    "Yohan Chatelain",
+    "Nadine El Mufti",
+    "Inés Gonzalez Pepe",
+    "Jama Hussein Mohamud",
+    "Vinuyan Sivakolunthu"
+  ],
+  "contact_email": "brainhackmtl2025@gmail.com"
+}
