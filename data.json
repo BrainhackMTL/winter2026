@@ -155,7 +155,7 @@
     {
       "name": "UNIQUE Centre",
       "url": "https://www.unique.quebec/",
-      "logo": "assets/images/unique-logo.png"
+      "logo": "https://raw.githubusercontent.com/BrainhackMTL/global2025/refs/heads/main/logos/unique-logo.png"
     }
   ],
   "organizers": [
