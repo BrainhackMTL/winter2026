@@ -151,7 +151,13 @@
   "location_name": "TBA",
   "location_url": "",
   "google_maps_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d178787.4312135177!2d-73.87667945522435!3d45.559304610957646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70d%3A0x654e3138211fefef!2sMontreal%2C%20QC!5e0!3m2!1sen!2sca!4v1753906100462!5m2!1sen!2sca",
-  "sponsors": [],
+  "sponsors": [
+    {
+      "name": "UNIQUE Centre",
+      "url": "https://www.unique.quebec/",
+      "logo": "assets/images/unique-logo.png"
+    }
+  ],
   "organizers": [
     "Mathieu Dugré",
     "Michelle Wang",
