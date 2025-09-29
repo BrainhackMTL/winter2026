@@ -1,9 +1,9 @@
 {
-  "title": "Brainhack Montreal 2025",
+  "title": "Brainhack Montreal Winter 2026",
   "location": "Montreal, QC, Canada",
   "city": "Montreal",
-  "dates": "TBA, 2025",
-  "year": "2025",
+  "dates": "January 28-30, 2026",
+  "year": "2026",
   "background_img": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Montreal_-_QC_-_Skyline.jpg",
   "color_theme": {
     "primary": "#912338",
@@ -50,7 +50,7 @@
     }
   ],
   "details": {
-    "costs": "TBA - Breakfast and lunch will be provided."
+    "costs": "40$ - Lunch will be provided"
   },
   "schedule_background_img": "https://upload.wikimedia.org/wikipedia/commons/0/04/Pont_Jacques_Cartier_Montreal.JPG",
   "schedule_link": "",
@@ -60,7 +60,7 @@
       "times": [
         {
           "time": "9:00-9:30",
-          "event": "Registration & Breakfast"
+          "event": "Registration"
         },
         {
           "time": "9:30-10:00",
@@ -96,11 +96,7 @@
       "date": "Day 2 (subject to change)",
       "times": [
         {
-          "time": "9:00-9:30",
-          "event": "Breakfast"
-        },
-        {
-          "time": "9:30-12:00",
+          "time": "9:00-12:00",
           "event": "Open hacking"
         },
         {
@@ -121,11 +117,11 @@
       "date": "Day 3 (subject to change)",
       "times": [
         {
-          "time": "9:00-9:30",
-          "event": "Breakfast"
+          "time": "9:00-10:00",
+          "event": "Open hacking"
         },
         {
-          "time": "9:30-11:00",
+          "time": "10:00-11:00",
           "event": "Unconference"
         },
         {
@@ -148,9 +144,9 @@
     }
   ],
   "location_logo": "fa-solid fa-location-dot",
-  "location_name": "TBA",
+  "location_name": "Centre hospitalier de l'Université de Montréal (CHUM)",
   "location_url": "",
-  "google_maps_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d178787.4312135177!2d-73.87667945522435!3d45.559304610957646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70d%3A0x654e3138211fefef!2sMontreal%2C%20QC!5e0!3m2!1sen!2sca!4v1753906100462!5m2!1sen!2sca",
+  "google_maps_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44736.894601145075!2d-73.61964463143104!3d45.50895307079152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a44bbb377c5%3A0x6e97d0c1ca10d7b4!2sCHUM%20-%20Centre%20hospitalier%20de%20l&#39;Universit%C3%A9%20de%20Montr%C3%A9al!5e0!3m2!1sen!2sca!4v1759175988860!5m2!1sen!2sca",
   "sponsors": [
     {
       "name": "UNIQUE Centre",
