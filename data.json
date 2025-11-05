@@ -162,6 +162,20 @@
       "height": "200px"
     },
     {
+      "name": "MoCA Cognition",
+      "url": "https://mocacognition.com/",
+      "logo": "https://raw.githubusercontent.com/BrainhackMTL/winter2026/refs/heads/main/logos/moca-logo.png",
+      "level": "advocate",
+      "height": "200px"
+    },
+    {
+      "name": "Concordia Graduate Students’ Association (GSA)",
+      "url": "https://gsaconcordia.ca/",
+      "logo": "https://raw.githubusercontent.com/BrainhackMTL/winter2026/refs/heads/main/logos/gsa-logo.png",
+      "level": "enthusiast",
+      "height": "100px"
+    },
+    {
       "name": "Centre for Research on Brain, Language and Music (CRBLM)",
       "url": "https://www.mcgill.ca/brain-language-music/",
       "logo": "https://raw.githubusercontent.com/BrainhackMTL/winter2026/refs/heads/main/logos/crblm-logo.jpg",
