@@ -169,7 +169,7 @@
       "height": "200px"
     },
     {
-      "name": "Concordia Graduate Students’ Association (GSA)",
+      "name": "Concordia Graduate Students' Association (GSA)",
       "url": "https://gsaconcordia.ca/",
       "logo": "https://raw.githubusercontent.com/BrainhackMTL/winter2026/refs/heads/main/logos/gsa-logo.png",
       "level": "enthusiast",
@@ -181,6 +181,13 @@
       "logo": "https://raw.githubusercontent.com/BrainhackMTL/winter2026/refs/heads/main/logos/crblm-logo.jpg",
       "level": "enthusiast",
       "height": "75px"
+    },
+    {
+      "name": "CNeuroMod",
+      "url": "https://www.cneuromod.ca/",
+      "logo": "https://raw.githubusercontent.com/BrainhackMTL/winter2026/refs/heads/main/logos/cneuromod-logo.svg",
+      "level": "enthusiast",
+      "height": "100px"
     }
   ],
   "organizers": [

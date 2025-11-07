@@ -213,6 +213,13 @@
                         {% endif %}
                     {% endfor %}
                     {% if sponsors_for_tier|length > 0 %}
+                        {% if sponsors_for_tier|length == 3 %}
+                            {% set col_width_lg_md = 4 %}
+                        {% elif sponsors_for_tier|length == 4 %}
+                            {% set col_width_lg_md = 3 %}
+                        {% else %}
+                            {% set col_width_lg_md = 6 %}
+                        {% endif %}
                         <div class="row top30">
                             <div class="col-lg-12 text-center">
                                 <h4 class="text-color-blue">{{tier|capitalize}}s</h4>
@@ -220,7 +227,7 @@
                         </div>
                         <div class="row text-center top10">
                         {% for sponsor in sponsors_for_tier %}
-                            <div class="sponsor-col col-lg-6 col-md-6 col-sm-10 col-xs-10 text-center">
+                            <div class="sponsor-col col-lg-{{col_width_lg_md}} col-md-{{col_width_lg_md}} col-sm-12 col-xs-12 text-center">
                                 <a href="{{sponsor.url}}" target="_blank" style="display:inline-block; border-bottom: none;">
                                     <img src="{{sponsor.logo}}" class="img-responsive" style="max-height: {{sponsor.height | default('150px')}};" alt="{{sponsor.name}}" id="{{sponsor.name.replace(" ", "_")}}">
                                 </a>
