@@ -4,7 +4,7 @@
   "city": "Montreal",
   "dates": "January 28-30, 2026",
   "year": "2026",
-  "background_img": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Montreal_-_QC_-_Skyline.jpg",
+  "background_img": "/assets/banner.jpg",
   "color_theme": {
     "primary": "#912338",
     "primary_hover": "#7a1d2e",
