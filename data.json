@@ -6,8 +6,8 @@
   "year": "2026",
   "background_img": "https://raw.githubusercontent.com/BrainhackMTL/winter2026/refs/heads/main/assets/banner.jpg",
   "color_theme": {
-    "primary": "#912338",
-    "primary_hover": "#7a1d2e",
+    "primary": "rgb(0, 103, 165)",
+    "primary_hover": "rgb(123, 175, 222)",
     "font": "#fff"
   },
   "code_of_conduct_link": "https://brainhack.org/code-of-conduct.html",
