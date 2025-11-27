@@ -1,0 +1,62 @@
+name: "Brainhack Project Submission"
+description: "Use this template to submit a Brainhack project"
+title: "[PROJECT] "   # will prefix issues with this title
+labels: ["project"]   # automatically tags the issue with the "project" label
+assignees: []         # optional, can leave empty
+body:
+  - type: input
+    id: project_name
+    attributes:
+      label: "Project Name"
+      description: "Name of your project"
+      placeholder: "Ex: Brain MRI Segmentation"
+  - type: textarea
+    id: aim
+    attributes:
+      label: "Aim of the project during Brainhack"
+      description: "What do you want to accomplish during Brainhack?"
+  - type: textarea
+    id: issues
+    attributes:
+      label: "List of issues/tasks"
+      description: "List of issues or tasks (strongly recommended)"
+  - type: input
+    id: leader
+    attributes:
+      label: "Leader(s)"
+      description: "Who will lead this project?"
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "Detailed project description"
+  - type: input
+    id: github
+    attributes:
+      label: "GitHub Repository"
+      description: "Repo link (recommended)"
+  - type: textarea
+    id: skillsets
+    attributes:
+      label: "Skillsets"
+      description: "Skills required for the project (strongly recommended)"
+  - type: textarea
+    id: tech
+    attributes:
+      label: "Tech Stack"
+      description: "Tech stack (strongly recommended)"
+  - type: textarea
+    id: learning
+    attributes:
+      label: "What will you learn?"
+      description: "Expected learnings (strongly recommended)"
+  - type: textarea
+    id: expectations
+    attributes:
+      label: "Expectations"
+      description: "Any expectations for team or participants (strongly recommended)"
+- type: textarea
+    id: additional
+    attributes:
+      label: "Additional"
+      description: "Anything that is important to know"
