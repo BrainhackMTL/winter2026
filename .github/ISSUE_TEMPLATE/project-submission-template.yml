@@ -90,7 +90,7 @@ body:
         repository/sources (e.g., Github link)
       placeholder: https://github.com/user_name/my_awesome_project
     validations:
-      required: true
+      required: false
 
   - type: textarea
     attributes:
