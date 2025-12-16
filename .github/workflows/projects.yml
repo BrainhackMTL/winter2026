@@ -2,7 +2,7 @@ name: Process Project Submission
 
 on:
   issues:
-    types: [edited]
+    types: [opened, edited, labeled]
 
 jobs:
   process-issue:
