@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Brainhack Projects">
+    <meta name="author" content="">
+
+    <title>Projects - {{title}}</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa:700' rel='stylesheet' type='text/css'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css' rel='stylesheet' type='text/css'>
+</head>
+
+<style>
+a {
+    color: {{color_theme.primary}} !important;
+}
+.btn {
+    color: {{color_theme.font}} !important;
+}
+</style>
+
+<body>
+
+    <header class="header" style="min-height: 40vh; height: auto; padding-bottom: 50px;">
+        <div class="text-vertical-center text-center">
+            <h1 style="margin-top: 100px;">{{title}} Projects</h1>
+            <br>
+            <a href="index.html" class="btn btn-dark btn-lg">Back to Home</a>
+        </div>
+    </header>
+
+    <section id="projects" class="services bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Submitted Projects</h2>
+                    <hr class="small">
+                    
+                    {% if projects %}
+                        <div class="row">
+                            {% for project in projects %}
+                            <div class="col-md-12" style="margin-bottom: 30px;">
+                                <div class="service-item" style="padding: 30px; background: #fff; color: #333; border-radius: 10px; text-align: left;">
+                                    <h3 class="text-center">{{ project.get('Title', 'Untitled Project') }}</h3>
+                                    
+                                    <p><strong><i class="fa fa-users"></i> Leaders:</strong> {{ project.get('Leaders', 'Unknown') }}</p>
+                                    
+                                    <hr>
+                                    <p style="white-space: pre-wrap;">{{ project.get('Project Description', 'No description provided.') }}</p>
+                                    
+                                    <div class="text-center" style="margin-top: 20px;">
+                                        {% if project.get('issue_url') %}
+                                            <a href="{{ project['issue_url'] }}" target="_blank" class="btn btn-primary">
+                                               <i class="fa-brands fa-github"></i> View / Join on GitHub
+                                            </a>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="lead">No projects have been submitted yet.</p>
+                                <a href="{{ project_submit_link }}" target="_blank" class="btn btn-dark btn-lg">Submit a Project</a>
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

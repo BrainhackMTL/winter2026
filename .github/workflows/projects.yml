@@ -1,0 +1,35 @@
+name: Process Project Submission
+
+on:
+  issues:
+    types: [edited]
+
+jobs:
+  process-issue:
+    # Only run if the issue has the specific label to avoid processing random issues
+    if: contains(github.event.issue.labels.*.name, 'project-submission')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Needed to push the JSON file back to the repo
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Parse Issue and Save JSON
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          python scripts/parse_issue.py
+
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update project data for Issue #${{ github.event.issue.number }}"
+          file_pattern: "data/projects/*.json"

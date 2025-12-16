@@ -15,8 +15,8 @@
   "registration_text": "Registration Open Now!",
   "survey_link": "",
   "discord_link": "https://discord.gg/wysCYqTWyM",
-  "project_link": "https://brainhack.org/global2025/projects/",
-  "project_submit_link": "https://github.com/brainhackorg/global2025/issues/new?assignees=&labels=project&template=project-submission-template.yml",
+  "project_link": "projects.html",
+  "project_submit_link": "https://github.com/BrainhackMTL/winter2026/issues/new?template=project-submission-template.yml",
   "project_submit_icon": "fa-child",
   "title_photo_link": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Montreal_-_QC_-_Skyline.jpg",
   "services": [

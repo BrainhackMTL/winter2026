@@ -52,7 +52,7 @@
       <br>
         <a href="{{registration_link}}" class="btn btn-dark btn-lg top5 left5">{{registration_text}}</a>
         <a href="{{discord_link}}" target="_blank" class="btn btn-dark btn-lg top5 left5">Join on Brainhack Montreal Discord</a>
-        <!-- <a href="{{project_submit_link}}" target="_blank" class="btn btn-dark btn-lg top5 left5">Submit a Project</a><br><br> -->
+        <a href="{{project_submit_link}}" target="_blank" class="btn btn-dark btn-lg top5 left5">Submit a Project</a><br><br>
     </header>
     
     <!-- Services -->
@@ -121,24 +121,6 @@
         </small>
     </section>
 
-    <!-- Brainhack -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="details" class="details">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-8 col-xl-offset-2 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
-                    <p><h3 class="text-center">Why Brainhack?</h3></p>
-                    {% for service in services %}
-                        <p>
-                            <span class="hl"><i class="fa-solid {{service.fa_icon}}"></i> {{service.title}} </span>
-                            {{service.desc}}
-                        </p>
-                    {% endfor%}
-                </div>
-			</div>
-		</div>
-	</section>
-
     <!-- Schedule -->
     <aside class="workspace" id="schedule">
         <div class="container">
@@ -179,7 +161,6 @@
 		</div>
     </aside>
 
-    {# TODO uncomment when project submission is open
     <!-- Projects -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
     <section id="projects" class="services bg-primary">
@@ -193,7 +174,6 @@
 			</div>
 		</div>
 	</section>
-    #}
 
     <section id="sponsors" class="no-padding">
         <div class="container-fluid">
