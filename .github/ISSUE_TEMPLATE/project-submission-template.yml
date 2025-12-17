@@ -170,7 +170,6 @@ body:
     attributes:
       label: Image
       description: Provide an image of your project for the Brainhack Global website.
-      value: Leave this text if you don't have an image yet.
     validations:
       required: false
 
@@ -203,12 +202,12 @@ body:
 
   - type: dropdown
     attributes:
-      label: Development status
+      label: Project Maturity Status
       multiple: false
       options:
-        - 0_concept_no_content
-        - 1_basic structure
-        - 2_releases_existing
+        - 0 - concept but no content
+        - 1 - basic structure
+        - 2 - releases existing
     validations:
       required: true
 
