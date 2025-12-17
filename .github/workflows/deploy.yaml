@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+  workflow_run:
+    workflows: ["Process Project Submission"]
+    types:
+      - completed
 
 jobs:
   # Build job
