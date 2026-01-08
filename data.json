@@ -80,7 +80,7 @@
         },
         {
           "time": "13:00-16:30",
-          "event": "Open hacking / TrainTrack"
+          "event": "Open hacking"
         },
         {
           "time": "16:30-18:00",
@@ -97,7 +97,7 @@
       "times": [
         {
           "time": "9:00-12:00",
-          "event": "Open hacking"
+          "event": "Open hacking / TrainTrack"
         },
         {
           "time": "12:00-13:00",
@@ -105,7 +105,7 @@
         },
         {
           "time": "13:00-16:30",
-          "event": "Open hacking"
+          "event": "Open hacking / TrainTrack"
         },
         {
           "time": "16:30-18:00",
